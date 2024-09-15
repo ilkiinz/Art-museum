@@ -101,11 +101,11 @@ header img{
 .ex-cont{
     height: 650px;
     width: 100%;
-    background-color: beige;
     padding-top: 45px;
 }
 
 .ex-cont h1{
+    margin-bottom: 25px;
     font-family: "Playfair Display", system-ui;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -116,7 +116,7 @@ header img{
 
 .line{
     width: 1px;
-    height: 150px;
+    height: 120px;
     background-color: rgb(132, 95, 11);
     margin: auto;
 }
@@ -125,21 +125,29 @@ header img{
     display: flex;
     flex-direction: row;
     gap: 30px;
+    padding: 0px 50px;
+    margin-top: 20px;
 }
 
 .photo-cont{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 25%;
     height: 300px;
     justify-content: center;
     align-items: center;
+    transition: all 1.3s;
+}
+
+.photo-cont:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .photo-cont img{
     width: 250px;
     height: 250px;
-    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .photo-cont h2{
@@ -156,8 +164,62 @@ header img{
     font-weight: 500;
     color: rgb(132, 95, 11);
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
+}
 
+.art-cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 620px;
+    padding: 0 50px;
+}
+
+.art-cont h1{
+    font-family: "Playfair Display", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+.art-txt-cont{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.art-txt-cont img{
+    width: 30%;
+    height: 300px;
+}
+
+.txt-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.txt-cont h3{
+    font-family: "Playfair Display", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 45px;
+    color: rgb(132, 95, 11);
+}
+
+.txt-cont p {
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.txt1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
   @media screen and (max-width: 768px) {
@@ -173,6 +235,25 @@ header img{
         margin: auto;
         height: 70px;
         width: 30%;
+    }
+
+    .photo-cont{
+        margin: auto;
+        height: 400px;
+    }
+
+    .photo-cont img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .ex-photos{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0px 50px;
+        margin-top: 20px;
+        justify-content: center;
     }
   }
 
